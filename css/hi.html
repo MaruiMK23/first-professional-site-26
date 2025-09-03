@@ -3,9 +3,9 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
+            <meta name="description" content="TechFlux Gaming Equipment Specifications - Detailed specs for all our gaming equipment rentals including PCs, VR systems, monitors, and peripherals." />
     <meta name="author" content="" />
-    <title>Portfolio - TechFlux</title>
+    <title>Equipment Specifications - TechFlux Gaming Rentals</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
     <!-- Font Awesome icons (free version)-->
@@ -14,7 +14,79 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="styles.css" rel="stylesheet" />
+    <link href="../css/styles.css" rel="stylesheet" />
+    <style>
+        body {
+            background-color: #0a0a0a;
+            color: #e0e0e0;
+        }
+        
+        .equipment-list {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .equipment-item {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border: 2px solid rgba(0, 255, 136, 0.3);
+            box-shadow: 0 2px 10px rgba(0, 255, 136, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .equipment-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 20px rgba(0, 255, 136, 0.3);
+        }
+        
+        .equipment-title {
+            color: #00ff88;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-shadow: 0 0 10px rgba(0, 255, 136, 0.3);
+        }
+        
+        .equipment-price {
+            background: linear-gradient(135deg, #00ff88 0%, #ff0080 100%);
+            color: #000;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 1rem;
+            margin-left: 1rem;
+            box-shadow: 0 2px 10px rgba(0, 255, 136, 0.4);
+        }
+        
+        .equipment-specs {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .equipment-specs li {
+            padding: 0.3rem 0;
+            color: #e0e0e0;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .equipment-title {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .equipment-price {
+                margin-left: 0;
+                margin-top: 0.5rem;
+            }
+        }
+    </style>
 </head>
 <body id="page-top">
     <!-- Navigation-->
@@ -25,110 +97,272 @@
                 <i class="fas fa-bars ms-1"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="../index.html#services">Services</a></li>
+                <ul class="navbar-nav text-uppercase py-4 py-lg-0">
                     <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html#services">Services</a></li>
                     <li class="nav-item"><a class="nav-link" href="../index.html#about">About</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Portfolio Grid-->
-    <section class="page-section bg-light" id="portfolio" style="padding-top: 8rem;">
+            <!-- Portfolio Grid-->
+        <section class="page-section" id="portfolio" style="padding-top: 8rem;">
         <div class="container">
             <div class="text-center">
-                <h2 class="section-heading text-uppercase">Portfolio</h2>
-                <h3 class="section-subheading text-muted">Click on any project to view details</h3>
+                <h2 class="section-heading text-uppercase">Equipment Specifications</h2>
+                <h3 class="section-subheading text-muted">Detailed specs for all our gaming equipment rentals</h3>
             </div>
             <div class="row">
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <!-- Portfolio item 1-->
-                    <div class="portfolio-item">
-                        <a class="portfolio-link" href="project1.html">
-                            <div class="portfolio-hover">
-                                <div class="portfolio-hover-content"><i class="fas fa-external-link-alt fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="../assets/img/portfolio/1.jpg" alt="Threads Project" />
-                        </a>
-                        <div class="portfolio-caption">
-                            <div class="portfolio-caption-heading">Threads</div>
-                            <div class="portfolio-caption-subheading text-muted">Illustration</div>
+                <div class="col-lg-12">
+                    <div class="equipment-list">
+                        <div class="equipment-item">
+                            <h4 class="equipment-title">Budget Gaming PC <span class="equipment-price">$35/day</span></h4>
+                            <ul class="equipment-specs">
+                                <li>• NVIDIA RTX 3060 Graphics Card</li>
+                                <li>• Intel i3-12100F Processor</li>
+                                <li>• 8GB DDR4 RAM</li>
+                                <li>• 256GB NVMe SSD</li>
+                                <li>• 500W 80+ Bronze PSU</li>
+                                <li>• Basic Air Cooling</li>
+                            </ul>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <!-- Portfolio item 2-->
-                    <div class="portfolio-item">
-                        <a class="portfolio-link" href="project2.html">
-                            <div class="portfolio-hover">
-                                <div class="portfolio-hover-content"><i class="fas fa-external-link-alt fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="../assets/img/portfolio/2.jpg" alt="Explore Project" />
-                        </a>
-                        <div class="portfolio-caption">
-                            <div class="portfolio-caption-heading">Explore</div>
-                            <div class="portfolio-caption-subheading text-muted">Graphic Design</div>
+                        
+                        <div class="equipment-item">
+                            <h4 class="equipment-title">RTX 4060 Gaming PC <span class="equipment-price">$40/day</span></h4>
+                            <ul class="equipment-specs">
+                                <li>• NVIDIA RTX 4060 Graphics Card</li>
+                                <li>• Intel i5-13400F Processor</li>
+                                <li>• 16GB DDR4 RAM</li>
+                                <li>• 512GB NVMe SSD</li>
+                                <li>• 650W 80+ Bronze PSU</li>
+                                <li>• Standard Air Cooling</li>
+                            </ul>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <!-- Portfolio item 3-->
-                    <div class="portfolio-item">
-                        <a class="portfolio-link" href="project3.html">
-                            <div class="portfolio-hover">
-                                <div class="portfolio-hover-content"><i class="fas fa-external-link-alt fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="../assets/img/portfolio/3.jpg" alt="Finish Project" />
-                        </a>
-                        <div class="portfolio-caption">
-                            <div class="portfolio-caption-heading">Finish</div>
-                            <div class="portfolio-caption-subheading text-muted">Identity</div>
+                        
+                        <div class="equipment-item">
+                            <h4 class="equipment-title">RTX 4070 Gaming PC <span class="equipment-price">$45/day</span></h4>
+                            <ul class="equipment-specs">
+                                <li>• NVIDIA RTX 4070 Graphics Card</li>
+                                <li>• Intel i5-13600K Processor</li>
+                                <li>• 16GB DDR5 RAM</li>
+                                <li>• 512GB NVMe SSD</li>
+                                <li>• 750W 80+ Gold PSU</li>
+                                <li>• Air Cooling System</li>
+                            </ul>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-                    <!-- Portfolio item 4-->
-                    <div class="portfolio-item">
-                        <a class="portfolio-link" href="project4.html">
-                            <div class="portfolio-hover">
-                                <div class="portfolio-hover-content"><i class="fas fa-external-link-alt fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="../assets/img/portfolio/4.jpg" alt="Lines Project" />
-                        </a>
-                        <div class="portfolio-caption">
-                            <div class="portfolio-caption-heading">Lines</div>
-                            <div class="portfolio-caption-subheading text-muted">Branding</div>
+                        
+                        <div class="equipment-item">
+                            <h4 class="equipment-title">RTX 4080 Gaming PC <span class="equipment-price">$50/day</span></h4>
+                            <ul class="equipment-specs">
+                                <li>• NVIDIA RTX 4080 Graphics Card</li>
+                                <li>• Intel i7-13700K Processor</li>
+                                <li>• 32GB DDR5 RAM</li>
+                                <li>• 1TB NVMe SSD</li>
+                                <li>• 850W 80+ Gold PSU</li>
+                                <li>• RGB Liquid Cooling</li>
+                            </ul>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
-                    <!-- Portfolio item 5-->
-                    <div class="portfolio-item">
-                        <a class="portfolio-link" href="project5.html">
-                            <div class="portfolio-hover">
-                                <div class="portfolio-hover-content"><i class="fas fa-external-link-alt fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="../assets/img/portfolio/5.jpg" alt="Southwest Project" />
-                        </a>
-                        <div class="portfolio-caption">
-                            <div class="portfolio-caption-heading">Southwest</div>
-                            <div class="portfolio-caption-subheading text-muted">Website Design</div>
+                        
+                        <div class="equipment-item">
+                            <h4 class="equipment-title">Xbox Controller <span class="equipment-price">$5/day</span></h4>
+                            <ul class="equipment-specs">
+                                <li>• Wireless Xbox Series X/S Controller</li>
+                                <li>• Bluetooth & USB-C Connection</li>
+                                <li>• 3.5mm Headset Jack</li>
+                                <li>• 40+ Hour Battery Life</li>
+                                <li>• Compatible with PC/Xbox</li>
+                            </ul>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <!-- Portfolio item 6-->
-                    <div class="portfolio-item">
-                        <a class="portfolio-link" href="project6.html">
-                            <div class="portfolio-hover">
-                                <div class="portfolio-hover-content"><i class="fas fa-external-link-alt fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="../assets/img/portfolio/6.jpg" alt="Window Project" />
-                        </a>
-                        <div class="portfolio-caption">
-                            <div class="portfolio-caption-heading">Window</div>
-                            <div class="portfolio-caption-subheading text-muted">Photography</div>
+                        
+                        <div class="equipment-item">
+                            <h4 class="equipment-title">PlayStation Controller <span class="equipment-price">$5/day</span></h4>
+                            <ul class="equipment-specs">
+                                <li>• Wireless DualSense Controller</li>
+                                <li>• USB-C Connection</li>
+                                <li>• 3.5mm Headset Jack</li>
+                                <li>• Haptic Feedback</li>
+                                <li>• Compatible with PC/PS5</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="equipment-item">
+                            <h4 class="equipment-title">Gaming Mouse <span class="equipment-price">$6/day</span></h4>
+                            <ul class="equipment-specs">
+                                <li>• 12,000 DPI Optical Sensor</li>
+                                <li>• RGB Lighting</li>
+                                <li>• USB Connection</li>
+                                <li>• 6 Programmable Buttons</li>
+                                <li>• Ergonomic Design</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="equipment-item">
+                            <h4 class="equipment-title">Gaming Headset <span class="equipment-price">$7/day</span></h4>
+                            <ul class="equipment-specs">
+                                <li>• 7.1 Surround Sound</li>
+                                <li>• Noise Cancelling Microphone</li>
+                                <li>• USB & 3.5mm Connection</li>
+                                <li>• RGB Lighting</li>
+                                <li>• Comfortable Memory Foam</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="equipment-item">
+                            <h4 class="equipment-title">Mechanical Keyboard <span class="equipment-price">$8/day</span></h4>
+                            <ul class="equipment-specs">
+                                <li>• Cherry MX Blue Switches</li>
+                                <li>• RGB Backlighting</li>
+                                <li>• USB-C Connection</li>
+                                <li>• Full Size Layout</li>
+                                <li>• Gaming Grade Quality</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="equipment-item">
+                            <h4 class="equipment-title">Arcade Stick <span class="equipment-price">$10/day</span></h4>
+                            <ul class="equipment-specs">
+                                <li>• Sanwa JLF Joystick</li>
+                                <li>• Sanwa OBSF-30 Buttons</li>
+                                <li>• USB Connection</li>
+                                <li>• Compatible with PC/PS4/PS5</li>
+                                <li>• Tournament Grade Quality</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="equipment-item">
+                            <h4 class="equipment-title">Meta Quest 2 <span class="equipment-price">$25/day</span></h4>
+                            <ul class="equipment-specs">
+                                <li>• 64GB Storage</li>
+                                <li>• 2x Touch Controllers</li>
+                                <li>• Hand Tracking Support</li>
+                                <li>• 6DOF Tracking</li>
+                                <li>• 2-3 Hour Battery Life</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="equipment-item">
+                            <h4 class="equipment-title">HTC Vive <span class="equipment-price">$30/day</span></h4>
+                            <ul class="equipment-specs">
+                                <li>• 90Hz Refresh Rate</li>
+                                <li>• 2x Controllers</li>
+                                <li>• 2x Base Stations</li>
+                                <li>• Room Scale Tracking</li>
+                                <li>• PC VR Only</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="equipment-item">
+                            <h4 class="equipment-title">Meta Quest 3 <span class="equipment-price">$35/day</span></h4>
+                            <ul class="equipment-specs">
+                                <li>• 128GB Storage</li>
+                                <li>• 2x Touch Controllers</li>
+                                <li>• Hand Tracking Support</li>
+                                <li>• Mixed Reality Capable</li>
+                                <li>• 6DOF Tracking</li>
+                                <li>• 2-3 Hour Battery Life</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="equipment-item">
+                            <h4 class="equipment-title">Valve Index <span class="equipment-price">$40/day</span></h4>
+                            <ul class="equipment-specs">
+                                <li>• 144Hz Refresh Rate</li>
+                                <li>• 2x Knuckle Controllers</li>
+                                <li>• 2x Base Stations</li>
+                                <li>• Finger Tracking</li>
+                                <li>• PC VR Only</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="equipment-item">
+                            <h4 class="equipment-title">Standard Monitor <span class="equipment-price">$8/day</span></h4>
+                            <ul class="equipment-specs">
+                                <li>• 24" 1080p Display</li>
+                                <li>• 60Hz Refresh Rate</li>
+                                <li>• 5ms Response Time</li>
+                                <li>• HDMI & VGA Connection</li>
+                                <li>• Basic Gaming Monitor</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="equipment-item">
+                            <h4 class="equipment-title">144Hz Monitor <span class="equipment-price">$12/day</span></h4>
+                            <ul class="equipment-specs">
+                                <li>• 24" 1080p Display</li>
+                                <li>• 144Hz Refresh Rate</li>
+                                <li>• 1ms Response Time</li>
+                                <li>• FreeSync Compatible</li>
+                                <li>• HDMI & DisplayPort</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="equipment-item">
+                            <h4 class="equipment-title">4K Gaming Monitor <span class="equipment-price">$15/day</span></h4>
+                            <ul class="equipment-specs">
+                                <li>• 27" 4K UHD Display</li>
+                                <li>• 144Hz Refresh Rate</li>
+                                <li>• 1ms Response Time</li>
+                                <li>• HDR10 Support</li>
+                                <li>• G-Sync Compatible</li>
+                                <li>• USB Hub & Audio Jack</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="equipment-item">
+                            <h4 class="equipment-title">Ultrawide Monitor <span class="equipment-price">$18/day</span></h4>
+                            <ul class="equipment-specs">
+                                <li>• 34" 3440x1440 Display</li>
+                                <li>• 100Hz Refresh Rate</li>
+                                <li>• 21:9 Aspect Ratio</li>
+                                <li>• USB-C Connection</li>
+                                <li>• Built-in Speakers</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="equipment-item">
+                            <h4 class="equipment-title">Green Screen <span class="equipment-price">$8/day</span></h4>
+                            <ul class="equipment-specs">
+                                <li>• 6x9ft Green Screen</li>
+                                <li>• Wrinkle Resistant</li>
+                                <li>• Portable Stand</li>
+                                <li>• Easy Setup</li>
+                                <li>• Professional Quality</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="equipment-item">
+                            <h4 class="equipment-title">Ring Light Setup <span class="equipment-price">$10/day</span></h4>
+                            <ul class="equipment-specs">
+                                <li>• 18" LED Ring Light</li>
+                                <li>• Adjustable Brightness</li>
+                                <li>• Color Temperature Control</li>
+                                <li>• Tripod Stand</li>
+                                <li>• Phone Mount Included</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="equipment-item">
+                            <h4 class="equipment-title">Capture Card <span class="equipment-price">$12/day</span></h4>
+                            <ul class="equipment-specs">
+                                <li>• 4K60 HDR Capture</li>
+                                <li>• USB 3.0 Connection</li>
+                                <li>• HDMI Input/Output</li>
+                                <li>• Low Latency</li>
+                                <li>• OBS Compatible</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="equipment-item">
+                            <h4 class="equipment-title">Webcam & Microphone <span class="equipment-price">$15/day</span></h4>
+                            <ul class="equipment-specs">
+                                <li>• 4K Webcam with Auto-Focus</li>
+                                <li>• USB Condenser Microphone</li>
+                                <li>• Pop Filter & Boom Arm</li>
+                                <li>• 60fps Recording</li>
+                                <li>• Built-in Noise Cancellation</li>
+                                <li>• Plug & Play Setup</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
